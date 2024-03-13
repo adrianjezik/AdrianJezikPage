@@ -1,0 +1,142 @@
+<!-- templates/index2.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O mnie - Moje Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+
+        }
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+        .container > div {
+            flex: 0 0 48%;
+            margin-bottom: 20px;
+			
+        }
+
+        @media (max-width: 768px) {
+            .container > div {
+                flex: 0 0 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Moje Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="/">Strona główna</a></li>
+                    <li><a href="/about">O mnie</a></li>
+                    <li><a href="/portfolio">Portfolio</a></li>
+                    <li><a href="/contact">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="about">
+        <div class="container">
+            <div>
+
+            
+            <p>Możesz pobrać moje CV klikając <a href="{{ url_for('static', filename='CV_Adrian_Jezik.pdf') }}">tutaj</a>.</p>
+
+				<h3>Doświadczenie zawodowe:</h3>
+        <p>02.2022 – 02.2024 [2 lata]<br>
+        <strong>Software Development / Intel Technology Poland / Gdańsk</strong><br>
+        • Praca nad walidacją oprogramowania dla kart sieciowych<br>
+        • Tworzenie testów automatycznych (C#, Python) przy użyciu CI/CD pipelines<br>
+        • Tworzenie aplikacji w językach C# i Python<br>
+        • Projektowanie przypadków testowych i praca z dokumentacją<br>
+        • Analiza danych testowych (formaty XML, CSV i JSON)</p>
+
+        <p>10.2020 – 10.2022 [2 lata]<br>
+        <strong>Developer / Koło uniwersyteckie automatyków i robotyków/ Gdańsk</strong><br>
+        • Tworzenie oprogramowania/firmware dla mikrokontrolerów w językach C i C++<br>
+        • Optymalizacja kodu dla ograniczonej pamięci mikrokontrolera i RAM<br>
+        • Implementacja funkcjonalności sprzętowych w języku Python</p>
+		<h3>Kursy, certyfikaty:</h3>
+        <ul>
+            <li>11.2023 - Data Science: Analiza danych w Pythonie i PANDAS (Udemy - Rafał Mobilo)</li>
+            <li>06.2023 - Kurs Pythona 3 od podstaw (Udemy - Kuba Wąsikowski)</li>
+            <li>08.2022 - Kurs C# dla programistów .NET (Udemy - Jakub Kozera)</li>
+            <li>06.2022 - Bootcamp uczenia maszynowego (Udemy - Paweł Krakowiak)</li>
+            <li>Certyfikaty Intel Product Assurance and Security: White i Yellow Belt</li>
+        </ul>
+				<h3>Linki:</h3>
+				<ul>
+					<li>Linkedin: <a href="https://www.linkedin.com/in/adrian-jezik-0b0091220/">Adrian Jezik</a></li>
+					<li>Github: <a href="https://github.com/adrianjezik">adrianjezik</a></li>
+				</ul>
+
+                <h3>Zainteresowania:</h3>
+                <ul>
+                    <li>Fascynuje mnie świat sztucznej inteligencji i jej obecne zastosowania.</li>
+                    <li>Regularnie śledzę nowe rozwiązania i technologie związane z uczeniem maszynowym.</li>
+                    <li>Mam doświadczenie w pracy nad sieciami neuronowymi i bibliotekami takimi jak Keras, TensorFlow, PyTorch.</li>
+                    <li>Moje pasje koncentrują się również na obszarze inżynierii oprogramowania i data science.</li>
+                </ul>
+            </div>
+
+            <div>
+			<h3>Wykształcenie:</h3>
+        <p>02.2023 – Obecnie [1 rok 2 miesiące]<br>
+        <strong>Politechnika Gdańska</strong><br>
+        <em>Kierunek: Informatyka</em><br>
+        Specjalizacja: Inżynieria oprogramowania<br>
+        Poziom edukacji: Magister <br>
+        <em>Dodatkowe informacje:</em><br>
+        Temat pracy magisterskiej - Analiza zastosowań sztucznej inteligencji w zarządzaniu projektami informatycznymi</p>
+
+        <p>09.2019 – 01.2023 [3 lata 5 miesięcy]<br>
+        <strong>Politechnika Gdańska</strong><br>
+        <em>Kierunek: Elektronika i telekomunikacja</em><br>
+        Specjalizacja: Systemy i sieci radiokomunikacyjne<br>
+        Poziom edukacji: Inżynier<br>
+        <em>Dodatkowe informacje:</em><br>
+        Temat projektu inżynierskiego - Synchronizacja symbolowa z wykorzystaniem uczenia maszynowego</p>
+
+                <h3>Umiejętności:</h3>
+                <ul>
+                    <li>C++/C#/Python/Java/R</li>
+                    <li>GitHub</li>
+                    <li>Biblioteki uczenia maszynowego</li>
+                    <li>Linux/Docker</li>
+                    <li>Visual Studio/IntelliJ</li>
+                    <li>Azure DevOps</li>
+                    <li>CI/CD pipelines</li>
+                    <li>Cloud Computing</li>
+                    <li>Data Science/Bazy danych</li>
+                    <li>REST API/front-end stack</li>
+                </ul>
+
+                <h3>Języki:</h3>
+                <p>Angielski: Średnio zaawansowany</p>
+                <p>Niemiecki: Podstawowy</p>
+				
+				
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Moje Portfolio</p>
+        </div>
+    </footer>
+</body>
+</html>
