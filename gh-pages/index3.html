@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Moje Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Moje Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="/">Strona główna</a></li>
+                    <li><a href="/about">O mnie</a></li>
+                    <li><a href="/portfolio">Portfolio</a></li>
+                    <li><a href="/contact">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="portfolio">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <p>Tutaj znajdziesz moje projekty znajdujące się na GitHubie.</p>
+            
+            <!-- Lista projektów -->
+            <ul>
+                <li>
+                    <a href="https://github.com/adrianjezik/ProjectJPWPJezik" target="_blank">
+					1. Gra edukacyjna
+                    </a>
+                    <p>Gra ma na celu rozwijac umiejętności szybkiego dodawania w pamięci i pobudkę umysłu. Gra została stworzona w technologi .NET z wykorzystaniem frameworka WindowsForms</p>
+					<img src="{{ url_for('static', filename='gra.png') }}" alt="Gra edukacyjna" width="300" height="200">
+				</li>
+                <li>
+                    <a href="https://github.com/adrianjezik/DeepLearningSentimentAnalisysModel" target="_blank">
+                        2. Analiza sentymentu opini książek za pomocą Deep Learning
+                    </a>
+                    <p>Program uczenia maszynowego, na podstawie tysięcy danych opini książek. Wyszkolona sieć neuronowa potrafi przewidzieć czy otrzymana opinia na wejściu jest pozytywna albo negatywna.</p>
+                </li>
+                <li>
+                    <a href="https://github.com/adrianjezik/K-ko_i_krzy-yk" target="_blank">
+                        3. Gra w kółko i krzyżyk
+                    </a>
+                    <p>Prosta gra multimedialna w kółko i krzyżyk w C++</p>
+                </li>
+                <li>
+                    <a href="https://github.com/adrianjezik/recruitment-simulator-with-cpp" target="_blank">
+                        4. Recruitment simulator
+                    </a>
+                    <p>Konsolowy symulator rozmowy rekrutacyjnej z przykładowym quizem</p>
+                </li>
+                <li>
+                    <a href="https://github.com/adrianjezik/makao-game" target="_blank">
+                        5. Gra karciana makao
+                    </a>
+                    <p>Konsolowa gra makao w wersji użytkownik vs komputer</p>
+                </li>
+				<li>
+				<p>Więcej moich projektów znajdziesz pod linkiem poniżej </p>
+                    <a href="https://github.com/adrianjezik" target="_blank">
+                        GitHub - Adrian Jezik
+                    </a>
+                    
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Moje Portfolio</p>
+        </div>
+    </footer>
+</body>
+</html>
