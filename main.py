@@ -3,7 +3,7 @@
 from flask import Flask, render_template, send_from_directory
 import os
 
-app = Flask(__name__, template_folder='C:/Users/ADRIAN/PycharmProjects/pythonProject4')
+app = Flask(__name__, template_folder='C:/Users/ADRIAN/PycharmProjects/pythonProject5')
 
 
 @app.route('/')
